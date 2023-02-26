@@ -1,4 +1,4 @@
-public class Sqaure {
+public class Square {
 
     // variables for the location
     private int locationX;
