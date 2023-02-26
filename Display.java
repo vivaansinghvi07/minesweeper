@@ -17,4 +17,13 @@ public class Display {
         Text.wait(400);
         Text.smoothPrint("\nEnter your choice as a number, 1 or 2: ");
     }
+    public static void printSize() {
+        Text.smoothPrint("What game size do you want to play on?\n");
+        Text.wait(200);
+        Text.smoothPrint("\t1. Small\n");
+        Text.smoothPrint("\t2. Medium\n");
+        Text.smoothPrint("\t3. Large\n");
+        Text.wait(400);
+        Text.smoothPrint("\nEnter your choice as an integer, between 1 and 3: ");
+    }
 }
