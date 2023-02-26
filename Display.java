@@ -7,6 +7,7 @@ public class Display {
         Text.smoothPrint("If you enter the spot on which a mine stands, you lose!\n");
         Text.wait(200);
         Text.smoothPrint("To enter a move, simply type in the coordinate of your intended spot, in an <xy> form. An example input would be \"d3\"\n");
+        Text.smoothPrint("If you want to flag a location, simply enter the letter \"f\" at the end of your move. If you want to flag the b7 square, you would type \"b3f\"\n");
         Text.wait(800);
     }
     public static void printFrequency() {
