@@ -1,15 +1,17 @@
 public class Display {
     public static void printIntro() {
+        System.out.print(Colors.WHITE_BOLD_BRIGHT);
         Text.smoothPrint("Welcome to Minesweeper!\n\n");
+        System.out.print(Colors.RESET);
         Text.wait(200);
         Text.smoothPrint("The objective of this game is to clear the minefield by guessing places until you lose!\n");
         Text.wait(200);
         Text.smoothPrint("If you enter the spot on which a mine stands, you lose!\n");
         Text.wait(200);
-        Text.smoothPrint("To enter a move, simply type in the coordinate of your intended spot, in an <xy> form. An example input would be \"dF\" (the coordinates are either uppercase or lowercase letters)\n");
+        Text.smoothPrint("To reveal a square, simply type in the coordinate of your intended spot, in an <xy> form. An example input would be \"dF\" (the coordinates are either uppercase or lowercase letters)\n");
         Text.smoothPrint("If you want to flag a location, simply enter the letter \"f\" at the end of your move. If you want to flag the bK square, you would type \"bKf\"\n");
         Text.wait(200);
-        Text.smoothPrint("\nNote: each square is represented by two characters on the x-axis in order to make them look more like a square and less like a rectangle.\n");
+        Text.smoothPrint("\nThe y-axis is represented by uppercase letters and the x-axis is represented by lowercase letters. Labels are present\n");
         Text.wait(800);
     }
     public static void printFrequency() {
