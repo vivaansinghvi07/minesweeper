@@ -44,4 +44,39 @@ public class Input {
     public void close() {
         this.scan.close();
     }
+
+    // method to obtain the settings
+    public int[] getSettings() {
+        // clears the console
+        Text.clear();
+
+        // prints introduction sequence
+        Display.printIntro();
+
+        // asks user when ready and then continues after they press enter
+        Text.smoothPrint("\nPress enter when you are ready.\n");
+        this.nextLine();
+
+        // clears the console
+        Text.clear();
+
+        // prints the prompt to get difficulty
+        Display.printDifficulty();
+
+        // gets the difficulty
+        int difficulty = this.boundedInt(1, 2);
+
+        // clears the console
+        Text.clear();
+
+        // prints the prompt to get the size
+        Display.printSize();
+
+        // gets the size
+        int size = this.boundedInt(1, 3);
+
+        // outputs the two numbers
+        int[] out = {difficulty, size};
+        return out;
+    }
 }
