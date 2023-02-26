@@ -10,19 +10,19 @@ public class Display {
         Text.wait(800);
     }
     public static void printFrequency() {
-        Text.smoothPrint("How often should mines occur?\n");
+        Text.smoothPrint("How often should mines occur?\n\n");
         Text.wait(200);
-        Text.smoothPrint("\t1. Rare\n");
-        Text.smoothPrint("\t2. Often\n");
+        Text.smoothPrint("  1. Rare\n");
+        Text.smoothPrint("  2. Often\n");
         Text.wait(400);
         Text.smoothPrint("\nEnter your choice as a number, 1 or 2: ");
     }
     public static void printSize() {
-        Text.smoothPrint("What game size do you want to play on?\n");
+        Text.smoothPrint("What game size do you want to play on?\n\n");
         Text.wait(200);
-        Text.smoothPrint("\t1. Small\n");
-        Text.smoothPrint("\t2. Medium\n");
-        Text.smoothPrint("\t3. Large\n");
+        Text.smoothPrint("  1. Small\n");
+        Text.smoothPrint("  2. Medium\n");
+        Text.smoothPrint("  3. Large\n");
         Text.wait(400);
         Text.smoothPrint("\nEnter your choice as an integer, between 1 and 3: ");
     }
