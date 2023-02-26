@@ -9,8 +9,8 @@ public class Square {
     private boolean mine;
     private boolean hidden;
 
-    // constructor for a square
-    public Square(int x, int y) {
+    // constructor for a square - y goes first for this project
+    public Square(int y, int x) {
         // assigns location
         this.locationX = x;
         this.locationY = y;
