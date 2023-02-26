@@ -9,6 +9,9 @@ public class Square {
     private boolean mine;
     private boolean hidden;
 
+    // stores how many mines it borders
+    private int minesBordered;
+
     // constructor for a square - y goes first for this project
     public Square(int y, int x) {
         // assigns location
@@ -19,5 +22,20 @@ public class Square {
         this.flagged = false;
         this.mine = false;
         this.hidden = true;
+
+        // defaults to 0 mines bordered - will be assigned later
+        this.minesBordered = 0;
+    }
+
+    public boolean isHidden() {
+        return this.hidden;
+    }
+
+    public boolean isFlagged() {
+        return this.flagged;
+    }
+
+    public int getBordered() {
+        return this.minesBordered;
     }
 }
