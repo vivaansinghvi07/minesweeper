@@ -9,11 +9,11 @@ public class Display {
         Text.smoothPrint("To enter a move, simply type in the coordinate of your intended spot, in an <xy> form. An example input would be \"d3\"\n");
         Text.wait(800);
     }
-    public static void printDifficulty() {
-        Text.smoothPrint("What difficulty would you like to play on?\n");
+    public static void printFrequency() {
+        Text.smoothPrint("How often should mines occur?\n");
         Text.wait(200);
-        Text.smoothPrint("\t1. Easy Mode\n");
-        Text.smoothPrint("\t2. Hard Mode\n");
+        Text.smoothPrint("\t1. Rare\n");
+        Text.smoothPrint("\t2. Often\n");
         Text.wait(400);
         Text.smoothPrint("\nEnter your choice as a number, 1 or 2: ");
     }

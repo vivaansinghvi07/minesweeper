@@ -61,10 +61,10 @@ public class Input {
         Text.clear();
 
         // prints the prompt to get difficulty
-        Display.printDifficulty();
+        Display.printFrequency();
 
         // gets the difficulty
-        int difficulty = this.boundedInt(1, 2);
+        int frequency = this.boundedInt(1, 2);
 
         // clears the console
         Text.clear();
@@ -76,7 +76,8 @@ public class Input {
         int size = this.boundedInt(1, 3);
 
         // outputs the two numbers
-        int[] out = {difficulty, size};
+        int[] out = {frequency, size};
         return out;
     }
+    
 }
