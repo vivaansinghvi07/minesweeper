@@ -10,7 +10,7 @@ public class Square {
     private boolean hidden;
 
     // constructor for a square
-    public Sqaure(int x, int y) {
+    public Square(int x, int y) {
         // assigns location
         this.locationX = x;
         this.locationY = y;
