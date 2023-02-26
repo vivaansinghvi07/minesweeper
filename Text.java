@@ -33,4 +33,10 @@ public class Text {
         System.out.flush();
         wait(200);
     }
+
+    // clears the console without the wait that the previous method has
+    public static void clearNoWait() {
+        System.out.println("\033[H\033[2J"); 
+        System.out.flush();
+    }
 }
