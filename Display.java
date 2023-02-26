@@ -26,4 +26,37 @@ public class Display {
         Text.wait(400);
         Text.smoothPrint("\nEnter your choice as an integer, between 1 and 3: ");
     }
+    public static int[] getSettings(Input in) {
+        // clears the console
+        Text.clear();
+
+        // prints introduction sequence
+        printIntro();
+
+        // asks user when ready and then continues after they press enter
+        Text.smoothPrint("\nPress enter when you are ready.\n");
+        in.nextLine();
+
+        // clears the console
+        Text.clear();
+
+        // prints the prompt to get difficulty
+        printDifficulty();
+
+        // gets the difficulty
+        int difficulty = in.boundedInt(1, 2);
+
+        // clears the console
+        Text.clear();
+
+        // prints the prompt to get the size
+        printSize();
+
+        // gets the size
+        int size = in.boundedInt(1, 3);
+
+        // outputs the two numbers
+        int[] out = {difficulty, size};
+        return out;
+    }
 }
