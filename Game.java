@@ -97,8 +97,17 @@ public class Game {
                 continue;
             }
 
-            // does it twice because there need to be two per number
-            output += temp.getBordered() + " ";
+            // gets the number of mines bordered
+            int bordered = temp.getBordered();
+
+            // if it borders zero it needs to be empty space
+            if (bordered == 0) { 
+                output += "  ";
+                continue;
+            }
+
+            // otherwise prints the number
+            output += bordered + " ";
 
         }
 
