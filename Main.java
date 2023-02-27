@@ -18,7 +18,6 @@ public class Main {
         int[] settings = in.getSettings();
         int frequency = settings[0], size = settings[1];
 
-        // TODO: begin the game
         Text.clear();
 
         // initializes the game
