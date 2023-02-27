@@ -12,7 +12,7 @@ public class Display {
         Text.smoothPrint("If you want to flag a location, simply enter the letter \"f\" at the end of your move. If you want to flag the bK square, you would type \"bKf\"\n");
         Text.wait(200);
         Text.smoothPrint("\nThe y-axis is represented by uppercase letters and the x-axis is represented by lowercase letters. Labels are present\n");
-        Text.wait(800);
+        Text.wait(400);
     }
     public static void printFrequency() {
         Text.smoothPrint("How often should mines occur?\n\n");
