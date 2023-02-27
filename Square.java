@@ -27,15 +27,23 @@ public class Square {
         this.minesBordered = 0;
     }
 
+    // getter methods
     public boolean isHidden() {
         return this.hidden;
     }
-
     public boolean isFlagged() {
         return this.flagged;
     }
-
+    public boolean isMine() {
+        return this.mine;
+    }
     public int getBordered() {
         return this.minesBordered;
+    }
+
+    // toggles the flag
+    public void flag() {
+        this.flagged = !this.flagged;
+        return;
     }
 }
