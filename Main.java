@@ -19,8 +19,31 @@ public class Main {
         int frequency = settings[0], size = settings[1];
 
         // TODO: begin the game
+        Text.clear();
 
+        // initializes the game
+        Game game = new Game(frequency, size);
+        System.out.println(game);
 
+        // control input returns false if the game is lost
+        while (game.controlInput(in)) {
+            if (game.isWon()) {
+                break;
+            }
+            Text.clearNoWait();
+            System.out.println(game);
+        }
+
+        Text.clearNoWait();
+        System.out.println(game + "\n");
+
+        if (game.isWon()) {
+            Text.smoothPrint("Congratulations! You won! Thanks for playing!\n\n");
+        }
+
+        else {
+            Text.smoothPrint("You lost. Thanks for playing!\n\n");
+        }
 
         
         // closes scanner
