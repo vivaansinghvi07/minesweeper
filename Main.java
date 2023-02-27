@@ -37,10 +37,12 @@ public class Main {
         System.out.println(game + "\n");
 
         if (game.isWon()) {
+            System.out.print(Colors.GREEN_BOLD_BRIGHT);
             Text.smoothPrint("Congratulations! You won! Thanks for playing!\n\n");
         }
 
         else {
+            System.out.print(Colors.RED_BOLD);
             Text.smoothPrint("You lost. Thanks for playing!\n\n");
         }
 
