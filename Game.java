@@ -152,6 +152,7 @@ public class Game {
 
     public boolean controlInput(Input in) {
         // prompts user for move
+        System.out.print(Colors.RESET);
         Text.smoothPrint("Enter your move: ");
 
         // gets the move using the input method
