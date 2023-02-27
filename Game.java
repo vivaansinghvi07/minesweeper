@@ -53,8 +53,8 @@ public class Game {
 
     public Game(int frequency, int size) {
         // declares the size of the game (might change logic later)
-        this.gameSizeX = size * 5 + 5;
-        this.gameSizeY = size * 5;
+        this.gameSizeX = size * 5 + 7;
+        this.gameSizeY = size * 5 + 2;
 
         // creates a new field of squares
         this.field = new Square[this.gameSizeY][this.gameSizeX];
