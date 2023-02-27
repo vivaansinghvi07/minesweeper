@@ -102,10 +102,10 @@ public class Game {
             // checks if the square is hidden or flagged
             if (temp.isHidden()) {
                 if (temp.isFlagged()) {
-                    output += Colors.RED_BOLD + Game.FLAG;
+                    output += Colors.PURPLE_BOLD_BRIGHT + Game.FLAG;
                 }
                 else {
-                    output += Colors.RESET + Game.BLOCK;
+                    output += Colors.PURPLE_BOLD_BRIGHT + Game.BLOCK;
                 }
                 continue;
             }
