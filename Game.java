@@ -307,12 +307,31 @@ public class Game {
 
         // checks if the target is a mine
         if (target.isMine()) {
+            showAllMines();
             return false;
         }
         
         // shows the place that was moved on
         target.show();
         return true;
+    }
+
+    // upon a loss, shows all the mines 
+    private void showAllMines() {
+        for (int y = 0; y < this.gameSizeY; y++) {
+            for (int x = 0; x < this.gameSizeX; x++) {
+                // assigns a temporary Square that is being analyzed
+                Square temp = this.field[y][x];
+                // reveals all mines
+                if (temp.isMine()) {
+                    temp.show();
+                }
+                else if (temp.isFlagged()) {
+                    // removes the flag from flagged mines
+                    temp.flag();
+                }
+            }
+        }
     }
 
     // controls input for player flag
