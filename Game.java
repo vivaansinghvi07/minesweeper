@@ -65,7 +65,7 @@ public class Game {
         // fills the board in with squares
         for (int i = 0; i < gameSizeY; i++) {
             for (int j = 0; j < gameSizeX; j++) {
-                this.field[i][j] = new Square(i, j);
+                this.field[i][j] = new Square();
             }
         }
 
