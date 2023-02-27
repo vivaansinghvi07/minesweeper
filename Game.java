@@ -105,12 +105,12 @@ public class Game {
                     output += Colors.PURPLE_BOLD_BRIGHT + Game.FLAG;
                 }
                 else {
-                    output += Colors.PURPLE_BOLD_BRIGHT + Game.BLOCK;
+                    output += Colors.RESET + Game.BLOCK;
                 }
                 continue;
             }
             else if (temp.isMine()) {
-                output += Colors.RED_BOLD + Game.MINE;
+                output += Colors.PURPLE_BOLD_BRIGHT + Game.MINE;
                 continue;
             }
 
