@@ -15,13 +15,13 @@ First, the game will ask you if you want to have smooth text printing enabled. A
 When you begin playing, you can move anywhere and it will clear the field partially, as does the normal game. Then, you can keep entering moves until the game is over. 
 
 The board at the start may look like this.
-[Board Before Moving](/imgs/board_default.png)
+![Board Before Moving](/imgs/board_default.png)
 
 Then, after making your first move, the board will look something like this:
-[Board At Start](/imgs/board_start.png)
+![Board At Start](/imgs/board_start.png)
 
 Then, after making several moves and losing, the board will look like thisL
-[Board At End](/imgs/board_end.png)
+![Board At End](/imgs/board_end.png)
 
 
 ## Credits: 
