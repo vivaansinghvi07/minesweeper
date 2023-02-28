@@ -21,7 +21,7 @@ public class Game {
     private static final String ALPHABETUPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     // colors for the numbers
-    private static final String[] NUMBERCOLORS = {Colors.GREEN_BOLD_BRIGHT, Colors.BLUE_BOLD_BRIGHT, Colors.RED_BOLD_BRIGHT, Colors.YELLOW_BOLD_BRIGHT, Colors.GREEN_BOLD, Colors.BLUE_BOLD, Colors.RED_BOLD, Colors.YELLOW_BOLD, Colors.CYAN_BOLD};
+    private static final String[] NUMBERCOLORS = {Colors.GREEN_BOLD_BRIGHT, Colors.BLUE_BOLD_BRIGHT, Colors.YELLOW_BOLD_BRIGHT, Colors.PURPLE_BOLD, Colors.BLUE_BOLD, Colors.RED_BOLD, Colors.YELLOW_BOLD, Colors.CYAN_BOLD, Colors.RED_BOLD_BRIGHT,};
 
     // the minefield itself
     private Square[][] field;
@@ -110,7 +110,7 @@ public class Game {
                 continue;
             }
             else if (temp.isMine()) {
-                output += Colors.PURPLE_BOLD_BRIGHT + Game.MINE;
+                output += Colors.RED_BOLD + Game.MINE;
                 continue;
             }
 
