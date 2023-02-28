@@ -11,7 +11,7 @@ public class Display {
         Text.smoothPrint("To reveal a square, simply type in the coordinate of your intended spot, in an <xy> form. An example input would be \"dF\"\n");
         Text.smoothPrint("If you want to flag a location, simply enter the letter \"f\" at the end of your move. If you want to flag the bK square, you would type \"bKf\"\n");
         Text.wait(200);
-        Text.smoothPrint("\nThe y-axis is represented by uppercase letters and the x-axis is represented by lowercase letters. Labels are present.\n");
+        Text.smoothPrint("\nThe x-axis is represented by lowercase letters and the y-axis is represented by uppercase letters. Labels are present.\n");
         Text.wait(300);
     }
     public static void printFrequency() {
